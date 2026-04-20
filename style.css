@@ -47,7 +47,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
     padding: 10px;
     background-color: rgb(82, 172, 214);
 }
@@ -81,12 +80,12 @@ nav a:hover {
     background-color: rgba(106, 208, 255, 0.616);
 }
 
-main{
+main {
     height: calc(100vh - 10vh);
 }
 
 /*Página de Inicio*/
-.capa{
+.capa {
     width: 80%;
     background-color: whitesmoke;
     display: flex;
@@ -97,12 +96,12 @@ main{
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    img{
+    img {
         width: 100%;
         border-radius: 30px;
     }
 
-    a{
+    a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -116,7 +115,7 @@ main{
         border-radius: 30px;
     }
 
-    a:hover{
+    a:hover {
         background-color: rgba(106, 208, 255, 0.758);
     }
 }
@@ -129,13 +128,12 @@ main{
     align-items: center;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     font-weight: bold;
     font-size: xxx-large;
-    color: whitesmoke;
-    text-shadow: 2px 2px 4px #000000;
-    margin-top: 100px;
+    color: rgb(0, 142, 207);
+    text-shadow: 2px 2px 4px rgba(83, 83, 83, 0.473);
 }
 
 .animal {
@@ -147,8 +145,7 @@ main{
     background-color: whitesmoke;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin: 20px 0 20px 0;
     padding: 40px 180px 40px 180px;
     font-size: x-large;
 
@@ -159,11 +156,11 @@ main{
     }
 }
 
-.caracteristicas{
+.caracteristicas {
     padding-left: 80px;
 }
 
-.butadotar{
+.butadotar {
     width: 60%;
     height: 60px;
     font-size: 100%;
@@ -175,6 +172,45 @@ main{
     cursor: pointer;
 }
 
-button:hover{
-    background-color:  rgba(106, 208, 255, 0.758);
+button:hover {
+    background-color: rgba(106, 208, 255, 0.758);
+}
+
+/*Página sobre*/
+.caixa {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    margin: 20px 0 20px 0;
+    padding: 10px 20px 20px 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    img {
+        width: 100%;
+        margin: 20px 0 20px 0;
+
+    }
+
+    ul {
+        padding: 0 20px 0 20px;
+    }
+
+    p {
+        text-align: center;
+        font-weight: bold;
+        font-size: medium;
+        color: rgba(36, 124, 165, 0.863);
+    }
+
+    h1 {
+        color: rgb(0, 142, 207);
+    }
+
+    h2,
+    h3 {
+        color: rgba(36, 124, 165, 0.863);
+    }
 }
