@@ -9,16 +9,6 @@
     src: url(Poppins/Poppins-Regular.ttf);
 }
 
-
-@media (max-width: 600px) {
-
-    nav,
-    article {
-        width: 100%;
-        height: auto;
-    }
-}
-
 body {
     background-image: url(imagens/fundo.png);
     background-repeat: no-repeat;
@@ -35,7 +25,7 @@ body {
 .eventos,
 .contato {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,20 +46,17 @@ nav .logo {
     font-weight: bold;
     font-style: italic;
     color: whitesmoke;
-
-    a:hover {
-        background-color: rgb(82, 172, 214);
-    }
 }
 
 nav ul {
     margin: 10px 20px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 nav a {
-    padding: 5px 20px;
+    padding: 5px 15px;
     text-decoration: none;
     font-size: larger;
     border-radius: 50px;
@@ -81,7 +68,7 @@ nav a:hover {
 }
 
 main {
-    height: calc(100vh - 10vh);
+    min-height: calc(100vh - 10vh);
 }
 
 /*Página de Inicio*/
@@ -92,39 +79,37 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 20px;
     border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-    img {
-        width: 100%;
-        border-radius: 30px;
-    }
+.capa img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
 
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: 20px;
-        width: 50%;
-        text-decoration: none;
-        height: 40px;
-        color: whitesmoke;
-        background-color: rgb(82, 172, 214);
-        border-radius: 30px;
-    }
+.capa a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 50%;
+    height: 40px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(82, 172, 214);
+    border-radius: 30px;
+}
 
-    a:hover {
-        background-color: rgba(106, 208, 255, 0.758);
-    }
+.capa a:hover {
+    background-color: rgba(106, 208, 255, 0.758);
 }
 
 /*Página de adoção*/
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -139,30 +124,47 @@ main {
 .animal {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    height: 80vh;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    width: 70%;
+    min-height: 320px;
+
     background-color: whitesmoke;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 20px 0 20px 0;
-    padding: 40px 180px 40px 180px;
-    font-size: x-large;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-    img {
-        width: 40%;
-        border-radius: 50%;
-        margin: 10px;
-    }
+    margin: 20px 0;
+    padding: 40px 5%;
+
+    font-size: x-large;
+    color: rgba(36, 124, 165, 0.863);
+}
+
+.animal img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+
+    display: block;
+    /* 🔥 ADICIONADO (centraliza melhor) */
+    margin: 0 auto;
+    /* 🔥 ADICIONADO (corrige desalinhamento) */
 }
 
 .caracteristicas {
-    padding-left: 80px;
+    max-width: 400px;
+    text-align: left;
+
+    padding-left: 0;
+    /* 🔥 ALTERADO (era 80px — causava desalinhamento) */
 }
 
 .butadotar {
-    width: 60%;
-    height: 60px;
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
     font-size: 100%;
     margin-top: 20px;
     color: whitesmoke;
@@ -182,35 +184,79 @@ button:hover {
     flex-direction: column;
     width: 70%;
     height: auto;
-    margin: 20px 0 20px 0;
-    padding: 10px 20px 20px 20px;
+    margin: 20px 0;
+    padding: 20px;
     background-color: whitesmoke;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-    img {
-        width: 100%;
-        margin: 20px 0 20px 0;
+.caixa img {
+    width: 100%;
+    margin: 20px 0;
+}
 
+.caixa ul {
+    padding: 0 20px;
+}
+
+.caixa p {
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    color: rgba(36, 124, 165, 0.863);
+}
+
+.caixa h1 {
+    color: rgb(0, 142, 207);
+}
+
+.caixa h2,
+.caixa h3 {
+    color: rgba(36, 124, 165, 0.863);
+}
+
+.axd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: rgb(0, 142, 207);
+    font-size: 105%;
+    font-weight: bold;
+    text-decoration: overline;
+    text-shadow: 1px 1px 2px rgba(83, 83, 83, 0.473);
+}
+
+/* 🔥 RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        height: auto;
     }
 
-    ul {
-        padding: 0 20px 0 20px;
+    nav ul {
+        justify-content: center;
     }
 
-    p {
+    .animal {
+        flex-direction: column;
         text-align: center;
-        font-weight: bold;
-        font-size: medium;
-        color: rgba(36, 124, 165, 0.863);
+        align-items: center;
+        /* 🔥 ADICIONADO (garante centralização total) */
     }
 
-    h1 {
-        color: rgb(0, 142, 207);
+    .caracteristicas {
+        padding-left: 0;
+        text-align: center;
     }
 
-    h2,
-    h3 {
-        color: rgba(36, 124, 165, 0.863);
+    .capa {
+        width: 95%;
+    }
+
+    .caixa {
+        width: 90%;
     }
 }
