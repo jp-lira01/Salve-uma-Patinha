@@ -46,6 +46,12 @@ nav .logo {
     font-weight: bold;
     font-style: italic;
     color: whitesmoke;
+    border: none;
+
+}
+
+nav .logo:hover {
+    background: none;
 }
 
 nav ul {
@@ -100,6 +106,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    white-space: nowrap;
     margin: 20px;
     width: 50%;
     height: 40px;
@@ -113,19 +121,20 @@ main {
     background-color: rgba(106, 208, 255, 0.758);
 }
 
+/* 🔥 ALTERADO PARA GRID */
 .como-adotar {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colunas */
     gap: 20px;
-    flex-wrap: wrap;
 
-    max-width: 90%;
-    min-height: 320px;
-
+    max-width: 80%;
 }
 
+/* 🔥 GARANTE QUE O TÍTULO OCUPE A LINHA TODA */
 .como-adotar-titulo {
+    grid-column: 1 / -1;
+
     width: 100%;
     margin-top: 50px;
     text-align: center;
@@ -133,35 +142,34 @@ main {
     font-weight: bold;
     color: rgb(0, 142, 207);
     text-shadow: 2px 2px 4px rgba(83, 83, 83, 0.473);
-
 }
 
 .card {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 40%;
+    width: 100%;
     background-color: whitesmoke;
-    height: 100%;
 
-    background-color: whitesmoke;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-    margin: 20px 0;
-    padding: 20px 3% 20px 3%;
+    padding: 30px;
 
     gap: 15px;
+}
 
-    img {
-        width: 40%;
-        max-width: 300px;
-        border-radius: 50%;
+.card img {
+    width: 150px;
+    /* 🔥 ALTERADO (evita bagunçar o layout) */
+    height: 150px;
+    /* 🔥 ADICIONADO */
+    object-fit: cover;
+    /* 🔥 ADICIONADO */
+    border-radius: 50%;
 
-        display: block;
-        /* 🔥 ADICIONADO (centraliza melhor) */
-        margin: 0 auto;
-    }
+    display: block;
+    margin: 0 auto;
 }
 
 .card-texto {
@@ -240,12 +248,11 @@ button:hover {
     background-color: rgba(106, 208, 255, 0.758);
 }
 
-
 /*Página sobre*/
 .caixa {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     height: auto;
     margin: 20px 0;
     padding: 20px;
@@ -294,6 +301,7 @@ button:hover {
 /* 🔥 RESPONSIVIDADE */
 @media (max-width: 768px) {
 
+    /*menu de navegação*/
     nav {
         flex-direction: column;
         height: auto;
@@ -303,6 +311,32 @@ button:hover {
         justify-content: center;
     }
 
+    /*Página de início*/
+    .capa {
+        width: 95%;
+    }
+
+    .capa a {
+        padding: 0 90px 0 90px;
+    }
+
+    /* 🔥 GRID RESPONSIVO (1 coluna no celular) */
+    .como-adotar {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .card img {
+        height: 80px;
+        width: 80px;
+    }
+
+
+    /*Página de adoção*/
     .animal {
         flex-direction: column;
         text-align: center;
@@ -315,15 +349,22 @@ button:hover {
         text-align: center;
     }
 
-    .capa {
-        width: 95%;
-    }
 
+    /*Página sobre*/
     .caixa {
-        width: 90%;
+        width: 80%;
     }
 
-    .card {
-        flex-wrap: wrap
+    .caixa h1 {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    .caixa h2 {
+        font-size: large;
+    }
+
+    .caixa h3 {
+        font-size: medium;
     }
 }
