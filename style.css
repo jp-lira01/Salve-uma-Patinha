@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", 'Times New Roman', Times, serif;
 }
 
 @font-face {
@@ -25,7 +26,7 @@ body {
 .eventos,
 .contato {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +34,7 @@ body {
 
 nav {
     width: 100%;
-    height: 10vh;
+    height: 10dvh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +75,7 @@ nav a:hover {
 }
 
 main {
-    min-height: calc(100vh - 10vh);
+    min-height: calc(100dvh - 10dvh);
 }
 
 /*container geral*/
@@ -108,7 +109,7 @@ main {
     justify-content: center;
     text-align: center;
     white-space: nowrap;
-    margin: 20px;
+    margin: 20px 0;
     width: 50%;
     height: 40px;
     text-decoration: none;
@@ -122,11 +123,13 @@ main {
 }
 
 /* 🔥 ALTERADO PARA GRID */
+/*container*/
 .como-adotar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* 2 colunas */
     gap: 20px;
+    margin-bottom: 20px;
 
     max-width: 80%;
 }
@@ -254,7 +257,7 @@ button:hover {
     flex-direction: column;
     width: 60%;
     height: auto;
-    margin: 20px 0;
+    margin: 20px;
     padding: 20px;
     background-color: whitesmoke;
     border-radius: 20px;
