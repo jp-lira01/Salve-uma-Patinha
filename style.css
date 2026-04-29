@@ -24,17 +24,6 @@ body {
 }
 
 /*Menu de Navegação*/
-.inicio,
-.adote,
-.sobre,
-.eventos,
-.contato {
-    width: 100%;
-    min-height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 nav {
     width: 100%;
@@ -335,6 +324,18 @@ main {
     font-weight: bold;
     text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(83, 83, 83, 0.473);
 }
+
+/*Página de eventos*/
+.eventos {
+    width: 80%;
+    height: auto;
+    background-color: whitesmoke;
+
+    img {
+        width: 100%;
+    }
+}
+
 
 /* 🔥 RESPONSIVIDADE */
 @media (max-width: 880px) {
