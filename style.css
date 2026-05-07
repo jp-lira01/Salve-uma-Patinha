@@ -336,6 +336,60 @@ main {
     }
 }
 
+/*Página de contato*/
+.formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+
+        label {
+            padding: 10px;
+        }
+
+        input {
+            width: 30rem;
+            padding: 5px 10px 5px 10px;
+        }
+
+        textarea {
+            width: 30rem;
+            height: 8rem;
+            padding: 5px 10px 5px 10px;
+            resize: none;
+        }
+    }
+
+    .btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.6rem;
+
+        width: 100%;
+
+        input {
+            width: 25%;
+            border: 1px solid black;
+            border-radius: 30px;
+        }
+    }
+}
+
 
 /* 🔥 RESPONSIVIDADE */
 @media (max-width: 880px) {
