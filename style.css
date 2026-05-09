@@ -337,6 +337,22 @@ main {
 }
 
 /*Página de contato*/
+.caixaContato {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    background-color: whitesmoke;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+
+    h1 {
+        font-size: 2rem;
+        color: rgb(0, 142, 207);
+    }
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
@@ -361,15 +377,41 @@ main {
         }
 
         input {
-            width: 30rem;
+            width: 20rem;
             padding: 5px 10px 5px 10px;
+            background: white;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
         }
 
+
         textarea {
-            width: 30rem;
+            width: 20rem;
             height: 8rem;
             padding: 5px 10px 5px 10px;
             resize: none;
+            background: white;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: rgb(82, 172, 214);
+            font-size: 18px;
+            font-family: "Poppins";
+            opacity: 1;
+            padding: 0;
+            margin: 10px;
+            text-align: center;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border: 2px solid rgb(82, 172, 214);
         }
     }
 
@@ -382,10 +424,11 @@ main {
 
         width: 100%;
 
-        input {
-            width: 25%;
+        button {
+            width: 10rem;
+            padding: 0.5rem 0 0.5rem 0;
             border: 1px solid black;
-            border-radius: 30px;
+            border-radius: 1.5rem;
         }
     }
 }
