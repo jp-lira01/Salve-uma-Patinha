@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salve uma Patinha</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -42,9 +43,10 @@
             <div class="caixaContato">
 
                 <div class="formulario">
-                    <h1>Fale conosco</h1>
 
                     <form action="mailto:#" method="post">
+                        <h1>Fale conosco</h1>
+
                         <label for="i_nome"></label>
                         <input type="text" name="nome" id="i_nome" placeholder="Digite seu nome">
 
@@ -54,13 +56,6 @@
                         <label for="i_msg"></label>
                         <textarea name="msg" id="i_msg" placeholder="Digite sua mensagem"></textarea>
 
-                        <div class="redesSociais">
-                            <a href="#"><img src="" alt=""></a> <!--tik tok, insta, face e X-->
-                            <a href="#"><img src="" alt=""></a>
-                            <a href="#"><img src="" alt=""></a>
-                            <a href="#"><img src="" alt=""></a>
-                        </div>
-
                         <div class="btn">
                             <button type="submit">Enviar</button>
                             <button type="reset">Limpar</button>
@@ -68,7 +63,17 @@
                     </form>
 
                 </div>
+
+                <div class="redesSociais">
+                    <!--tik tok, insta, face e X-->
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-tiktok"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                </div>
+
             </div>
+        </div>
         </div>
     </main>
 </body>
