@@ -340,7 +340,7 @@ main {
 .caixaContato {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 80%;
     margin: 1.25rem;
     padding: 1.25rem;
     background-color: whitesmoke;
@@ -358,7 +358,6 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     width: 50%;
-    background-color: green;
     align-items: flex-start;
     justify-content: center;
 
@@ -424,7 +423,7 @@ main {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 0.6rem;
+        gap: 0.5rem;
         margin-top: 2rem;
 
         width: 100%;
@@ -432,18 +431,47 @@ main {
         button {
             width: 8rem;
             padding: 0.5rem 0 0.5rem 0;
-            border: 1px solid black;
+            border: none;
             border-radius: 1.5rem;
             cursor: pointer;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            background: white;
+            transition: 0.5s;
         }
     }
+
+    .btn button:hover {
+        transform: scale(0.80);
+    }
+}
+
+/* 🔥 NOVO CONTAINER PARA TÍTULO + ÍCONES */
+.redes-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🔥 TÍTULO DAS REDES SOCIAIS */
+.titulo-redessociais {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.titulo-redessociais h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(0, 142, 207);
 }
 
 .redesSociais {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
-    background-color: red;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -455,12 +483,12 @@ main {
     flex-wrap: wrap;
     text-decoration: none;
     background: none;
-    background-color: pink;
-    width: 7rem;
-    height: 7rem;
+    background-color: rgb(82, 172, 214);
+    width: 6rem;
+    height: 6rem;
     margin: 0 10px;
     border-radius: 20px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    box-shadow: rgba(17, 17, 26, 0.2) 0px 4px 16px, rgba(17, 17, 26, 0.2) 0px 8px 24px, rgba(17, 17, 26, 0.2) 0px 16px 56px;
     transition: 0.5s;
 }
 
