@@ -10,7 +10,7 @@
     src: url(Poppins/Poppins-Regular.ttf);
 }
 
-/* 🔥 CONTROLE GLOBAL DE TEXTO */
+/* CONTROLE GLOBAL DE TEXTO */
 html {
     font-size: 16px;
 }
@@ -157,7 +157,6 @@ main {
     background-color: rgb(70, 148, 184);
 }
 
-/* 🔥 ALTERADO PARA GRID */
 /*container*/
 .como-adotar {
     display: grid;
@@ -167,7 +166,7 @@ main {
     max-width: 80%;
 }
 
-/* 🔥 GARANTE QUE O TÍTULO OCUPE A LINHA TODA */
+
 .como-adotar-titulo {
     grid-column: 1 / -1;
     width: 100%;
@@ -491,19 +490,19 @@ main {
     }
 }
 
-/* 🔥 NOVO CONTAINER PARA TÍTULO + ÍCONES */
+/*CONTAINER PARA TÍTULO + ÍCONES */
 .redes-container {
     display: flex;
     flex-direction: column;
     width: 50%;
     align-items: center;
 
-    /* 🔥 ALTERADO */
+    /* ALTERADO */
     justify-content: flex-start;
     padding-top: 1rem;
 }
 
-/* 🔥 TÍTULO DAS REDES SOCIAIS */
+/*TÍTULO DAS REDES SOCIAIS */
 .titulo-redessociais {
     width: 100%;
     display: flex;
@@ -570,10 +569,7 @@ main {
 }
 
 
-
-
 /*Botões Geral*/
-/* 🔥 EFEITO PADRÃO EM TODOS OS BOTÕES/LINKS */
 .capa a:hover,
 .butadotar:hover,
 .capa-evento a:hover,
@@ -591,14 +587,9 @@ nav a:focus {
 }
 
 
-
-
-
-/* 🔥 RESPONSIVIDADE */
-/* 🔥 RESPONSIVIDADE */
+/* RESPONSIVIDADE */
 @media (max-width: 880px) {
 
-    /* 🔥 DIMINUI TUDO AUTOMATICAMENTE */
     html {
         font-size: 13px;
     }
@@ -630,7 +621,6 @@ nav a:focus {
         padding: 0 5rem;
     }
 
-    /* 🔥 GRID RESPONSIVO (1 coluna no celular) */
     .como-adotar {
         grid-template-columns: 1fr;
     }
@@ -692,7 +682,7 @@ nav a:focus {
         width: 95%;
     }
 
-    /* 🔥 TROCA A IMAGEM NO MOBILE */
+    /* TROCA A IMAGEM NO MOBILE */
     .capa-evento img {
         content: url(imagens/evento-mobile.png);
     }
@@ -717,7 +707,7 @@ nav a:focus {
         font-size: 1rem;
         line-height: 1.2;
 
-        /* 🔥 QUEBRA LINHA */
+        /* QUEBRA LINHA */
         white-space: normal;
         word-wrap: break-word;
     }
@@ -727,11 +717,6 @@ nav a:focus {
         flex-wrap: wrap;
     }
 
-
-
-
-
-    /* 🔥 ADICIONADO - CONTATO RESPONSIVO */
     .caixaContato {
         flex-direction: column;
         width: 95%;
