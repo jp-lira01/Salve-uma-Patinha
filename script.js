@@ -1,9 +1,7 @@
 function abrirMenu() {
-    const menu = document.querySelector(".menu-lateral")
-    menu.style.display = "flex"
+    document.querySelector('.menu-lateral').classList.add('abrir')
 }
 
 function fecharMenu() {
-    const menu = document.querySelector(".menu-lateral")
-    menu.style.display = "none"
+    document.querySelector('.menu-lateral').classList.remove('abrir')
 }

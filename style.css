@@ -31,16 +31,20 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.625rem;
+    padding: 3rem 5rem;
+    margin-bottom: 1rem;
     background-color: rgb(82, 172, 214);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 nav .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    font-style: italic;
-    color: whitesmoke;
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 10rem;
+    }
 }
 
 nav .logo:hover {
@@ -80,19 +84,31 @@ main {
     position: fixed;
     top: 0;
     right: 0;
+
     height: 100dvh;
     width: 15.625rem;
+
     z-index: 999;
+
     background-color: rgba(82, 172, 214, 0.644);
     box-shadow: -0.625rem 0 0.625rem rgba(0, 0, 0, 0.1);
-    display: none;
+
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+
     backdrop-filter: blur(0.625rem);
+
     padding: 0.625rem 0.3125rem;
     margin: 0;
     gap: 0.625rem;
+
+    /* MENU ESCONDIDO */
+    transform: translateX(100%);
+
+    /* ANIMAÇÃO */
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 
     a {
         color: whitesmoke;
@@ -102,6 +118,10 @@ main {
         color: rgb(82, 172, 214);
         background-color: whitesmoke;
     }
+}
+
+.menu-lateral.abrir {
+    transform: translateX(0);
 }
 
 .icone {
@@ -598,6 +618,7 @@ nav a:focus {
     nav {
         flex-direction: row;
         height: auto;
+        padding: 0.625rem;
     }
 
     nav ul {
@@ -614,7 +635,7 @@ nav a:focus {
 
     /*Página de início*/
     .capa {
-        width: 95%;
+        width: 100%;
     }
 
     .capa a {
