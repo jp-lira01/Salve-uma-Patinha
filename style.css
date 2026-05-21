@@ -584,21 +584,12 @@ main {
     color: white;
 }
 
-.redesSociais a:hover i {
+.redesSociais a:active i {
     transform: scale(0.90);
     color: whitesmoke;
 }
 
-.redesSociais a:hover {
-    transform: scale(0.80);
-}
-
-.redesSociais a:focus i {
-    transform: scale(0.90);
-    color: whitesmoke;
-}
-
-.redesSociais a:focus {
+.redesSociais a:active {
     transform: scale(0.80);
 }
 
@@ -612,14 +603,13 @@ nav a:hover {
     transition: 0.5s;
 }
 
-.capa a:focus,
+.capa a:active,
 .butadotar:active,
-.capa-evento a:hover,
-nav a:focus {
+.capa-evento a:active,
+nav a:active {
     transform: scale(0.90);
     transition: 0.5s;
 }
-
 
 /* RESPONSIVIDADE */
 @media (max-width: 880px) {
