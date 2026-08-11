@@ -1,116 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="imagens/Logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="imagens/Logo.png" />
     <title>Salve uma Patinha</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <!--Menu de Navegação-->
     <nav>
-        <div class="logo">
-            <a href="index.html" class="logo"><img src="imagens/Logo Completa branca.png" alt="logo da página"></a>
-        </div>
-        <ul>
-            <li onclick="abrirMenu()" class="esconder-pc"><a href="#" class="icone">&#9776;</a></li>
-            <li class="esconder-mobile"><a href="index.html">Inicio</a></li>
-            <li class="esconder-mobile"><a href="adote.html">Adote</a></li>
-            <li class="esconder-mobile"><a href="sobre.html">Sobre Nós</a></li>
-            <li class="esconder-mobile"><a href="eventos.html">Eventos</a></li>
-            <li class="esconder-mobile"><a href="contato.html">Contato</a></li>
-        </ul>
+      <div class="logo">
+        <a href="index.html" class="logo"
+          ><img src="imagens/Logo Completa branca.png" alt="logo da página"
+        /></a>
+      </div>
+      <ul>
+        <li onclick="abrirMenu()" class="esconder-pc">
+          <a href="#" class="icone">&#9776;</a>
+        </li>
+        <li class="esconder-mobile"><a href="index.html">Inicio</a></li>
+        <li class="esconder-mobile"><a href="adote.html">Adote</a></li>
+        <li class="esconder-mobile"><a href="sobre.html">Sobre Nós</a></li>
+        <li class="esconder-mobile"><a href="eventos.html">Eventos</a></li>
+        <li class="esconder-mobile"><a href="contato.html">Contato</a></li>
+        <li class="esconder-mobile">
+          <a href="cadastro_pet.html">Cadastrar Pet</a>
+        </li>
+      </ul>
 
-        <!--Menu Mobile-->
-        <ul class="menu-lateral">
-            <li onclick="fecharMenu()"><a href="#" class="icone">&#10006;</a></li>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="adote.html">Adote</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="eventos.html">Eventos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-        <script src="script.js"></script>
-
+      <!--Menu Mobile-->
+      <ul class="menu-lateral">
+        <li onclick="fecharMenu()"><a href="#" class="icone">&#10006;</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="adote.html">Adote</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cadastro_pet.html">Cadastrar Pet</a></li>
+      </ul>
+      <script src="script.js"></script>
     </nav>
 
     <!--Principal-->
     <main>
-        <div class="container">
-            <div class="titulo"><span>Nos dê um novo lar</span></div>
+      <div class="container">
+        <div class="titulo"><span>Nos dê um novo lar</span></div>
 
-            <div class="animal"><img src="imagens/Max.jpeg" alt="Foto do animal">
-                <div class="caracteristicas">
-                    <p>Idade: 2 anos</p>
-                    <p>Características: Carinhoso, curioso e gosta de companhia. Muito fiel.</p>
-                    <div>
-                        <button class="butadotar">Adotar</button>
-                    </div>
-                </div>
+        <div class="animal">
+          <img src="imagens/Max.jpeg" alt="Foto do animal" />
+          <div class="caracteristicas">
+            <p>Idade: 2 anos</p>
+            <p>
+              Características: Carinhoso, curioso e gosta de companhia. Muito
+              fiel.
+            </p>
+            <div>
+              <button class="butadotar">Adotar</button>
             </div>
-
-            <div class="animal"><img src="imagens/Mel.jpeg" alt="Foto do animal">
-
-                <div class="caracteristicas">
-                    <p>Idade: 3 meses</p>
-                    <p>Características: Doce, dócil e muito amorosa. Ainda está aprendendo tudo.</p>
-                    <div>
-                        <button class="butadotar">Adotar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="animal"><img src="imagens/Nina.jpeg" alt="Foto do animal">
-
-                <div class="caracteristicas">
-                    <p>Idade: 2 meses</p>
-                    <p>Características: Alegre, curiosa e super ativa. Ama atenção e carinho.</p>
-                    <div>
-                        <button class="butadotar">Adotar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="animal"><img src="imagens/Thor.jpeg" alt="Foto do animal">
-
-                <div class="caracteristicas">
-                    <p>Idade: 3 anos</p>
-                    <p>Características: Calmo, tranquilo e adora tomar sol. Ótimo para ambientes mais sossegados.</p>
-
-                    <div>
-                        <button class="butadotar">Adotar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="animal"><img src="imagens/Bob.jpeg" alt="Foto do animal">
-
-
-                <div class="caracteristicas">
-                    <p>Idade: 2 anos</p>
-                    <p>Características: Extrovertido, amigável e cheio de energia. Ótimo com pessoas.</p>
-                    <div>
-                        <button class="butadotar">Adotar</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="animal"><img src="imagens/Luna.jpeg" alt="Foto do animal">
-
-                <div class="caracteristicas">
-                    <p>Idade: 1 ano e meio</p>
-                    <p>Características: Brincalhona, esperta e cheia de energia. Ideal para quem gosta de passeios.</p>
-                    <div>
-                        <button class="butadotar">Adotar</button>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
-    </main>
-</body>
 
+        <div class="animal">
+          <img src="imagens/Mel.jpeg" alt="Foto do animal" />
+
+          <div class="caracteristicas">
+            <p>Idade: 3 meses</p>
+            <p>
+              Características: Doce, dócil e muito amorosa. Ainda está
+              aprendendo tudo.
+            </p>
+            <div>
+              <button class="butadotar">Adotar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="animal">
+          <img src="imagens/Nina.jpeg" alt="Foto do animal" />
+
+          <div class="caracteristicas">
+            <p>Idade: 2 meses</p>
+            <p>
+              Características: Alegre, curiosa e super ativa. Ama atenção e
+              carinho.
+            </p>
+            <div>
+              <button class="butadotar">Adotar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="animal">
+          <img src="imagens/Thor.jpeg" alt="Foto do animal" />
+
+          <div class="caracteristicas">
+            <p>Idade: 3 anos</p>
+            <p>
+              Características: Calmo, tranquilo e adora tomar sol. Ótimo para
+              ambientes mais sossegados.
+            </p>
+
+            <div>
+              <button class="butadotar">Adotar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="animal">
+          <img src="imagens/Bob.jpeg" alt="Foto do animal" />
+
+          <div class="caracteristicas">
+            <p>Idade: 2 anos</p>
+            <p>
+              Características: Extrovertido, amigável e cheio de energia. Ótimo
+              com pessoas.
+            </p>
+            <div>
+              <button class="butadotar">Adotar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="animal">
+          <img src="imagens/Luna.jpeg" alt="Foto do animal" />
+
+          <div class="caracteristicas">
+            <p>Idade: 1 ano e meio</p>
+            <p>
+              Características: Brincalhona, esperta e cheia de energia. Ideal
+              para quem gosta de passeios.
+            </p>
+            <div>
+              <button class="butadotar">Adotar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

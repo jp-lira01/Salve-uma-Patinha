@@ -43,63 +43,51 @@
       <script src="script.js"></script>
     </nav>
 
-    <!--Principal-->
     <main>
       <div class="container">
-        <div class="capa">
-          <img src="imagens/Capa.png" alt="imagem de adoção" />
-
-          <a href="adote.html">Adote um animal</a>
-        </div>
-
-        <!--Explicação de como adotar-->
-        <div class="como-adotar">
-          <h1 class="como-adotar-titulo">Como adotar</h1>
-
-          <div class="card">
-            <img
-              src="imagens/escolha-seu-amigo.png"
-              alt="pessoa procurando um animal para adotar"
-            />
-            <div class="card-texto">
-              <h3>1 - Esolha seu amigo</h3>
-              <p>Navegue pela nossa lista de animais.</p>
-            </div>
+        <form action="#">
+          <div class="form-header">
+            <h1>🐾Cadastrar Pet🐾</h1>
+            <h2>Ajude um animal a encontrar um lar</h2>
           </div>
 
-          <div class="card">
-            <img
-              src="imagens/entrevista.png"
-              alt="pessoa sendo entrevistada para adotar um animal"
-            />
-            <div class="card-texto">
-              <h3>2 - Entrevista</h3>
-              <p>Batemos um papo para conhecer seu perfil.</p>
-            </div>
-          </div>
+          <div class="informacoes_pet">
+            <h2>Informações do pet</h2>
+            <label for="nome">
+              Nome
+              <div class="input_field">
+                <input type="text" id="nome" name="nome" required />
+              </div>
+            </label>
 
-          <div class="card">
-            <img
-              src="imagens/visita.png"
-              alt="pessoa visitando animal que pretende adotar"
-            />
-            <div class="card-texto">
-              <h3>3 - Visita</h3>
-              <p>Você conhece o animal pessoalmente.</p>
-            </div>
-          </div>
+            <label for="raca">
+              Raça
+              <div class="input_field">
+                <input type="text" id="raca" name="raca" required />
+              </div>
+            </label>
 
-          <div class="card">
-            <img
-              src="imagens/finalize-adocao.png"
-              alt="pessoa com seu animal adotado"
-            />
-            <div class="card-texto">
-              <h3>4 - Finalize a adoção</h3>
-              <p>Assine o termo e leve seu novo amigo para casa!</p>
-            </div>
+            <label for="idade">
+              Idade
+              <div class="input_field">
+                <input type="number" id="idade" name="idade" min="0" required />
+              </div>
+            </label>
+
+            <label for="especie">
+              Especie
+              <div class="input_field">
+                <select name="especia" id="especie">
+                  <option value="">Selecione</option>
+                  <option value="cachorro">Cachorro</option>
+                  <option value="gato">Gato</option>
+                  <option value="coelho">Coelho</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+            </label>
           </div>
-        </div>
+        </form>
       </div>
     </main>
   </body>
