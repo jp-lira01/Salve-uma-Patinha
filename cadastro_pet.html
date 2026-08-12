@@ -45,47 +45,348 @@
 
     <main>
       <div class="container">
-        <form action="#">
+        <form action="#" class="cadastro">
           <div class="form-header">
             <h1>🐾Cadastrar Pet🐾</h1>
             <h2>Ajude um animal a encontrar um lar</h2>
           </div>
-
           <div class="informacoes_pet">
-            <h2>Informações do pet</h2>
-            <label for="nome">
-              Nome
-              <div class="input_field">
-                <input type="text" id="nome" name="nome" required />
-              </div>
-            </label>
+            <h2>🐾 Informações do Pet</h2>
 
-            <label for="raca">
-              Raça
-              <div class="input_field">
-                <input type="text" id="raca" name="raca" required />
+            <div class="linha-campos">
+              <div class="campo">
+                <label for="nome">Nome do pet *</label>
+                <div class="input_field">
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Ex.: Mel"
+                    required
+                  />
+                </div>
               </div>
-            </label>
 
-            <label for="idade">
-              Idade
-              <div class="input_field">
-                <input type="number" id="idade" name="idade" min="0" required />
+              <div class="campo">
+                <label for="especie">Espécie *</label>
+                <div class="input_field">
+                  <select name="especie" id="especie" required>
+                    <option value="">Selecione</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="coelho">Coelho</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
               </div>
-            </label>
+            </div>
 
-            <label for="especie">
-              Especie
-              <div class="input_field">
-                <select name="especia" id="especie">
-                  <option value="">Selecione</option>
-                  <option value="cachorro">Cachorro</option>
-                  <option value="gato">Gato</option>
-                  <option value="coelho">Coelho</option>
-                  <option value="outro">Outro</option>
-                </select>
+            <div class="linha-campos">
+              <div class="campo">
+                <label for="raca">Raça</label>
+                <div class="input_field">
+                  <input
+                    type="text"
+                    id="raca"
+                    name="raca"
+                    placeholder="Ex.: Labrador / SRD"
+                  />
+                </div>
               </div>
-            </label>
+
+              <div class="campo">
+                <label for="sexo">Sexo *</label>
+                <div class="input_field">
+                  <select name="sexo" id="sexo" required>
+                    <option value="">Selecione</option>
+                    <option value="macho">Macho</option>
+                    <option value="femea">Fêmea</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="linha-campos">
+              <div class="campo">
+                <label for="idade">Idade *</label>
+                <div class="input_field">
+                  <input
+                    type="text"
+                    id="idade"
+                    name="idade"
+                    placeholder="Ex.: 2 anos"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="porte">Porte *</label>
+                <div class="input_field">
+                  <select name="porte" id="porte" required>
+                    <option value="">Selecione</option>
+                    <option value="pequeno">Pequeno</option>
+                    <option value="medio">Médio</option>
+                    <option value="grande">Grande</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <h2>📸 Fotos do Pet</h2>
+
+            <div class="upload-foto">
+              <label for="foto" class="upload-area">
+                <span class="icone-upload">📷</span>
+                <strong>Adicionar foto</strong>
+                <p>A primeira foto será a principal</p>
+              </label>
+
+              <input
+                type="file"
+                id="foto"
+                name="foto"
+                accept="image/*"
+                multiple
+              />
+            </div>
+
+            <h2>❤️ Sobre o Pet</h2>
+
+            <div class="campo campo-completo">
+              <label for="descricao">Conte um pouco sobre o animal</label>
+              <div class="input_field">
+                <textarea
+                  id="descricao"
+                  name="descricao"
+                  rows="5"
+                  placeholder="Ex.: A Mel é muito carinhosa, brincalhona e se dá bem com outros animais."
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="campo campo-completo">
+              <label>Temperamento</label>
+
+              <div class="checkbox-group">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="temperamento"
+                    value="carinhoso"
+                  />
+                  Carinhoso</label
+                >
+
+                <label
+                  ><input
+                    type="checkbox"
+                    name="temperamento"
+                    value="brincalhao"
+                  />
+                  Brincalhão</label
+                >
+
+                <label
+                  ><input type="checkbox" name="temperamento" value="calmo" />
+                  Calmo</label
+                >
+
+                <label
+                  ><input type="checkbox" name="temperamento" value="timido" />
+                  Tímido</label
+                >
+
+                <label
+                  ><input
+                    type="checkbox"
+                    name="temperamento"
+                    value="sociavel"
+                  />
+                  Sociável</label
+                >
+              </div>
+            </div>
+
+            <div class="linha-campos radios">
+              <div class="campo">
+                <label>Convive com crianças?</label>
+
+                <div class="radio-group">
+                  <label
+                    ><input type="radio" name="criancas" value="sim" />
+                    Sim</label
+                  >
+                  <label
+                    ><input type="radio" name="criancas" value="nao" />
+                    Não</label
+                  >
+                  <label
+                    ><input type="radio" name="criancas" value="naosei" /> Não
+                    sei</label
+                  >
+                </div>
+              </div>
+
+              <div class="campo">
+                <label>Convive com outros animais?</label>
+
+                <div class="radio-group">
+                  <label
+                    ><input type="radio" name="animais" value="sim" />
+                    Sim</label
+                  >
+                  <label
+                    ><input type="radio" name="animais" value="nao" />
+                    Não</label
+                  >
+                  <label
+                    ><input type="radio" name="animais" value="naosei" /> Não
+                    sei</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="linha-campos radios">
+              <div class="campo">
+                <label>É castrado?</label>
+
+                <div class="radio-group">
+                  <label
+                    ><input type="radio" name="castrado" value="sim" />
+                    Sim</label
+                  >
+                  <label
+                    ><input type="radio" name="castrado" value="nao" />
+                    Não</label
+                  >
+                </div>
+              </div>
+
+              <div class="campo">
+                <label>É vacinado?</label>
+
+                <div class="radio-group">
+                  <label
+                    ><input type="radio" name="vacinado" value="sim" />
+                    Sim</label
+                  >
+                  <label
+                    ><input type="radio" name="vacinado" value="nao" />
+                    Não</label
+                  >
+                  <label
+                    ><input type="radio" name="vacinado" value="parcialmente" />
+                    Parcialmente</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <h2>📍 Localização</h2>
+
+            <div class="linha-campos">
+              <div class="campo">
+                <label for="estado">Estado *</label>
+                <div class="input_field">
+                  <select id="estado" name="estado" required>
+                    <option value="">Selecione</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="cidade">Cidade *</label>
+                <div class="input_field">
+                  <input
+                    type="text"
+                    id="cidade"
+                    name="cidade"
+                    placeholder="Ex.: São Gonçalo"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <h2>👤 Responsável pelo Cadastro</h2>
+
+            <div class="linha-campos">
+              <div class="campo">
+                <label for="responsavel">Nome completo *</label>
+                <div class="input_field">
+                  <input
+                    type="text"
+                    id="responsavel"
+                    name="responsavel"
+                    placeholder="Seu nome"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="whatsapp">WhatsApp *</label>
+                <div class="input_field">
+                  <input
+                    type="tel"
+                    id="whatsapp"
+                    name="whatsapp"
+                    placeholder="(21) 99999-9999"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="campo campo-completo">
+              <label for="email">E-mail</label>
+              <div class="input_field">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="seuemail@email.com"
+                />
+              </div>
+            </div>
+
+            <div class="btn-cadastro">
+              <button type="submit">🐾 Cadastrar para Adoção</button>
+
+              <p>
+                Seus dados serão utilizados apenas para contato relacionado à
+                adoção.
+              </p>
+            </div>
           </div>
         </form>
       </div>
